@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fozia Digital Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f9fc;
+color:#333;
+}
+
+/* Navbar */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#4a6cf7;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#4a6cf7;
+}
+
+/* Hero */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#4a6cf7;
+color:white;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#2f4cd6;
+}
+
+/* Features */
+.features{
+padding:80px 8%;
+text-align:center;
+}
+
+.feature-box{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.feature{
+background:white;
+padding:30px;
+width:280px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Products */
+.products{
+padding:80px 8%;
+background:#fff;
+text-align:center;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.product{
+background:#f8f9fc;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-8px);
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#4a6cf7;
+font-weight:600;
+margin:10px 0;
+}
+
+/* About */
+.about{
+padding:80px 8%;
+text-align:center;
+}
+
+/* Contact */
+.contact{
+padding:80px 8%;
+background:#f8f9fc;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+form input, form textarea{
+margin:10px 0;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+form button{
+background:#4a6cf7;
+color:white;
+border:none;
+padding:12px;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* Footer */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.hero h1{
+font-size:30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Fozia Digital</div>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Build Your Online Store Professionally</h1>
+<p>Modern, Fast & Fully Responsive Ecommerce Websites</p>
+<a href="#contact" class="btn">Get Started</a>
+</div>
+</section>
+
+<section class="features">
+<h2>Why Choose Me?</h2>
+<div class="feature-box">
+<div class="feature">
+<h3>Responsive Design</h3>
+<p>Mobile friendly layout for all devices.</p>
+</div>
+<div class="feature">
+<h3>Modern UI</h3>
+<p>Clean and professional user interface.</p>
+</div>
+<div class="feature">
+<h3>Fast Delivery</h3>
+<p>Quick turnaround and quality work.</p>
+</div>
+</div>
+</section>
+
+<section class="products" id="products">
+<h2>Featured Products</h2>
+<div class="product-grid">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<h4>Smart Phone</h4>
+<p class="price">$299</p>
+<a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+<h4>Smart Watch</h4>
+<p class="price">$79</p>
+<a href="#" class="btn">Buy Now</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155228d1b6">
+<h4>Headphones</h4>
+<p class="price">$49</p>
+<a href="#" class="btn">Buy Now</a>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About This Store</h2>
+<p>I design modern ecommerce solutions that help businesses grow online.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Me</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Fozia Digital Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
